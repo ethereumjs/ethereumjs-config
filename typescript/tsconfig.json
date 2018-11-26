@@ -1,17 +1,13 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./src",
-    "outDir": "./dist",
-    "sourceMap": false,
-    "declaration": false,
+    "sourceMap": true,
+    "declaration": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "emitDecoratorMetadata": false,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noImplicitAny": true,
     "target": "es5",
     "lib": ["es2018"]
   }
