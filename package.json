@@ -1,0 +1,10 @@
+{
+  "name": "ethereumjs-config",
+  "version": "0.0.1",
+  "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
+  "author": "Krzysztof Kaczor <chris@kaczor.io>",
+  "license": "MIT",
+  "files": [
+    "typescript/**"
+  ]
+}
