@@ -1,0 +1,11 @@
+{
+  "name": "ethereumjs-config-tsc",
+  "version": "1.0.0",
+  "main": "tsconfig.json",
+  "license": "MIT",
+  "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
+  "author": "Krzysztof Kaczor <chris@kaczor.io>",
+  "files": [
+    "tsconfig.json"
+  ]
+}
