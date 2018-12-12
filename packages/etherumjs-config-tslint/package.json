@@ -1,0 +1,11 @@
+{
+  "name": "ethereumjs-config-tslint",
+  "version": "1.0.0",
+  "main": "tslint.json",
+  "license": "MIT",
+  "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
+  "author": "Krzysztof Kaczor <chris@kaczor.io>",
+  "files": [
+    "tslint.json"
+  ]
+}
