@@ -1,11 +1,14 @@
 {
-  "name": "@ethereumjs/config-tslint",
+  "name": "@ethereumjs/config-prettier",
   "version": "1.0.0",
-  "main": "tslint.json",
+  "main": "prettier.json",
   "license": "MIT",
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
-    "tslint.json"
-  ]
+    "prettier.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
