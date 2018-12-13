@@ -1,5 +1,5 @@
 {
-  "name": "ethereumjs-config-tslint",
+  "name": "@ethereumjs/config-tslint",
   "version": "1.0.0",
   "main": "tslint.json",
   "license": "MIT",

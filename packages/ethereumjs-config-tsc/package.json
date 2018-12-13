@@ -1,5 +1,5 @@
 {
-  "name": "ethereumjs-config-tsc",
+  "name": "@ethereumjs/config-tsc",
   "version": "1.0.0",
   "main": "tsconfig.json",
   "license": "MIT",

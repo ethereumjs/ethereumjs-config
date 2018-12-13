@@ -1,5 +1,5 @@
 {
-  "name": "ethereumjs-config-nyc",
+  "name": "@ethereumjs/config-nyc",
   "version": "1.0.0",
   "main": "nyc.json",
   "license": "MIT",
