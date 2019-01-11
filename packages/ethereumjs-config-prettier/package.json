@@ -6,8 +6,13 @@
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
-    "prettier.json"
+    "prettier.json",
+    "cli"
   ],
+  "bin": {
+    "ethereumjs-config-format": "./cli/format.sh",
+    "ethereumjs-config-format-fix": "./cli/format-fix.sh"
+  },
   "publishConfig": {
     "access": "public"
   }
