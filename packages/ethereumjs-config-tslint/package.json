@@ -6,8 +6,15 @@
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
-    "tslint.json"
+    "tslint.json",
+    "cli"
   ],
+  "bin": {
+    "ethereumjs-config-tslint": "./cli/tslint.sh",
+    "ethereumjs-config-tslint-fix": "./cli/tslint-fix.sh",
+    "ethereumjs-config-lint": "./cli/lint.sh",
+    "ethereumjs-config-lint-fix": "./cli/lint-fix.sh"
+  },
   "publishConfig": {
     "access": "public"
   }
