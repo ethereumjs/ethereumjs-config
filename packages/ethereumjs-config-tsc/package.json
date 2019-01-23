@@ -6,8 +6,13 @@
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
-    "tsconfig.json"
+    "tsconfig.json",
+    "cli"
   ],
+  "bin": {
+    "ethereumjs-config-tsc": "./cli/tsc.sh",
+    "ethereumjs-config-build": "./cli/build.sh"
+  },
   "publishConfig": {
     "access": "public"
   }

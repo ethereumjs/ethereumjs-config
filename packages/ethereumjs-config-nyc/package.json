@@ -6,8 +6,13 @@
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
-    "nyc.json"
+    "nyc.json",
+    "cli"
   ],
+  "bin": {
+    "ethereumjs-config-coverage": "./cli/coverage.sh",
+    "ethereumjs-config-coveralls": "./cli/coveralls.sh"
+  },
   "publishConfig": {
     "access": "public"
   }
