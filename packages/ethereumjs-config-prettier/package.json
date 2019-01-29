@@ -1,6 +1,6 @@
 {
   "name": "@ethereumjs/config-prettier",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "prettier.json",
   "license": "MIT",
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
