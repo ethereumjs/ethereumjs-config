@@ -1,4 +1,4 @@
-#@ethereumjs/config-prettier
+# @ethereumjs/config-prettier
 
 Common formatting configuration for `EthereumJS` libraries.
 

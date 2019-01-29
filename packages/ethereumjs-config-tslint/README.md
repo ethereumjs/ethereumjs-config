@@ -1,4 +1,4 @@
-#@ethereumjs/config-tslint
+# @ethereumjs/config-tslint
 
 Common linting configuration for `EthereumJS` libraries.
 

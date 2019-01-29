@@ -1,4 +1,4 @@
-#@ethereumjs/config-tsc
+# @ethereumjs/config-tsc
 
 Common `TypeScript` configuration for `EthereumJS` libraries.
 

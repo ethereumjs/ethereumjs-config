@@ -1,4 +1,4 @@
-#@ethereumjs/config-nyc
+# @ethereumjs/config-nyc
 
 Common test coverage configuration for `EthereumJS` libraries.
 
