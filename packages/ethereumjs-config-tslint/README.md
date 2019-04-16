@@ -34,5 +34,7 @@ Use CLI commands above in `package.json`:
   }
 ```
 
+## Installation
 
+This package requires [`typestrict`](https://github.com/krzkaczor/TypeStrict) to be installed.
 
