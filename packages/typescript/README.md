@@ -34,7 +34,7 @@ Add `tsconfig.prod.json`:
 }
 ```
 
-Use CLI commands above in `package.json`:
+Use CLI commands above in your `package.json`:
 
 ```json
   "scripts": {
@@ -42,6 +42,3 @@ Use CLI commands above in `package.json`:
     "build": "ethereumjs-config-ts-build"
   }
 ```
-
-
-

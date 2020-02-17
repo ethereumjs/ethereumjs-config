@@ -29,11 +29,11 @@ dist
 .nyc_output
 ```
 
-Use CLI commands above in `package.json`:
+Use CLI commands above in your `package.json`:
 
 ```json
   "scripts": {
     "format": "ethereumjs-config-format",
-    "format-fix": "ethereumjs-config-format-fix"
+    "format:fix": "ethereumjs-config-format-fix"
   }
 ```
