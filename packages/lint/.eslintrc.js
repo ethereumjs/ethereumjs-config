@@ -1,6 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'implicit-dependencies'],
   env: {
     es6: true,
     node: true,
@@ -19,6 +19,7 @@ module.exports = {
     'no-debugger': 'error',
     'prefer-const': 'error',
     'no-var': 'error',
+    'implicit-dependencies/no-implicit': 'error',
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/interface-name-prefix': [
       'error',
