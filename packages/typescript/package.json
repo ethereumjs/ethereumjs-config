@@ -1,17 +1,17 @@
 {
-  "name": "@ethereumjs/config-prettier",
-  "version": "1.1.1",
-  "main": "prettier.json",
+  "name": "@ethereumjs/config-typescript",
+  "version": "2.0.0",
+  "main": "tsconfig.json",
   "license": "MIT",
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
-    "prettier.json",
+    "tsconfig.json",
     "cli"
   ],
   "bin": {
-    "ethereumjs-config-format": "./cli/format.sh",
-    "ethereumjs-config-format-fix": "./cli/format-fix.sh"
+    "ethereumjs-config-ts-compile": "./cli/ts-compile.sh",
+    "ethereumjs-config-ts-build": "./cli/ts-build.sh"
   },
   "publishConfig": {
     "access": "public"

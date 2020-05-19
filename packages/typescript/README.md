@@ -1,4 +1,4 @@
-# @ethereumjs/config-tsc
+# @ethereumjs/config-typescript
 
 Common `TypeScript` configuration for `EthereumJS` libraries.
 
@@ -8,8 +8,8 @@ Supported Version: `^3.2.2`
 
 Exposed CLI commands:
 
-- `ethereumjs-config-tsc`
-- `ethereumjs-config-build`
+- `ethereumjs-config-ts-compile`
+- `ethereumjs-config-ts-build`
 
 ## Usage
 
@@ -17,7 +17,7 @@ Add `tsconfig.json`:
 
 ```json
 {
-  "extends": "@ethereumjs/config-tsc",
+  "extends": "@ethereumjs/config-typescript",
   "include": ["src/**/*.ts", "test/**/*.ts"]
 }
 ```
@@ -26,7 +26,7 @@ Add `tsconfig.prod.json`:
 
 ```json
 {
-  "extends": "@ethereumjs/config-tsc",
+  "extends": "@ethereumjs/config-typescript",
   "compilerOptions": {
     "outDir": "./dist"
   },
@@ -38,8 +38,8 @@ Use CLI commands above in `package.json`:
 
 ```json
   "scripts": {
-    "tsc": "ethereumjs-config-tsc",
-    "build": "ethereumjs-config-build"
+    "tsc":   "ethereumjs-config-ts-compile",
+    "build": "ethereumjs-config-ts-build"
   }
 ```
 

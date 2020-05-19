@@ -27,10 +27,10 @@ Use CLI commands above in `package.json`:
 
 ```json
   "scripts": {
-    "tslint": "ethereumjs-config-tslint",
-    "tslint-fix": "ethereumjs-config-tslint-fix",
-    "lint": "ethereumjs-config-lint",
-    "lint-fix": "ethereumjs-config-lint-fix"
+    "tslint":     "ethereumjs-config-tslint",
+    "tslint:fix": "ethereumjs-config-tslint --fix",
+    "lint":       "ethereumjs-config-lint",
+    "lint:fix":   "ethereumjs-config-lint --fix"
   }
 ```
 
