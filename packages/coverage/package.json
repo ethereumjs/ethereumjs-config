@@ -1,17 +1,16 @@
 {
-  "name": "@ethereumjs/config-prettier",
-  "version": "1.1.1",
-  "main": "prettier.json",
+  "name": "@ethereumjs/config-coverage",
+  "version": "2.0.0",
+  "main": "nyc.json",
   "license": "MIT",
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
-    "prettier.json",
+    "nyc.json",
     "cli"
   ],
   "bin": {
-    "ethereumjs-config-format": "./cli/format.sh",
-    "ethereumjs-config-format-fix": "./cli/format-fix.sh"
+    "ethereumjs-config-coverage": "./cli/coverage.sh"
   },
   "publishConfig": {
     "access": "public"
