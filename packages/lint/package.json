@@ -1,6 +1,6 @@
 {
   "name": "@ethereumjs/config-lint",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "main": ".eslintrc.js",
   "license": "MIT",
   "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
