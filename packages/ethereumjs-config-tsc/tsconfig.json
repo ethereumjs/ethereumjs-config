@@ -6,8 +6,10 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
+    "downlevelIteration": true,
     "strict": true,
     "target": "es5",
     "lib": ["es2018"]
