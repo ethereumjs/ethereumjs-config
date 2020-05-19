@@ -1,4 +1,4 @@
-# @ethereumjs/config-prettier
+# @ethereumjs/config-format
 
 Common formatting configuration for `EthereumJS` libraries.
 
@@ -16,7 +16,7 @@ Exposed CLI commands:
 Add `prettier.config.js`:
 
 ```javascript
-module.exports = require('@ethereumjs/config-prettier')
+module.exports = require('@ethereumjs/config-format')
 ```
 
 Add `.prettierignore`:
@@ -37,6 +37,3 @@ Use CLI commands above in `package.json`:
     "format-fix": "ethereumjs-config-format-fix"
   }
 ```
-
-
-

@@ -10,8 +10,8 @@
     "cli"
   ],
   "bin": {
-    "ethereumjs-config-tsc": "./cli/tsc.sh",
-    "ethereumjs-config-build": "./cli/build.sh"
+    "ethereumjs-config-ts-compile": "./cli/ts-compile.sh",
+    "ethereumjs-config-ts-build": "./cli/ts-build.sh"
   },
   "publishConfig": {
     "access": "public"

@@ -1,4 +1,4 @@
-# @ethereumjs/config-nyc
+# @ethereumjs/config-coverage
 
 Common test coverage configuration for `EthereumJS` libraries.
 
@@ -6,10 +6,9 @@ Tool: [nyc](https://istanbul.js.org/)
 
 Supported Version: `^11.7.0`
 
-Exposed CLI commands:
+Exposed CLI command:
 
 - `ethereumjs-config-coverage`
-- `ethereumjs-config-coveralls`
 
 ## Usage
 
@@ -17,18 +16,14 @@ Add `.nycrc`:
 
 ```json
 {
-  "extends": "@ethereumjs/config-nyc"
+  "extends": "@ethereumjs/config-coverage"
 }
 ```
 
-Use CLI commands above in `package.json`:
+Use scipt above in `package.json`:
 
 ```json
   "scripts": {
-    "coverage": "ethereumjs-config-coverage",
-    "coveralls": "ethereumjs-config-coveralls"
+    "coverage": "ethereumjs-config-coverage"
   }
 ```
-
-
-
