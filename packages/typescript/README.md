@@ -15,7 +15,7 @@ Add `tsconfig.json`:
 
 ```json
 {
-  "extends": "@ethereumjs/config-typescript",
+  "extends": "@ethereumjs/config-typescript/tsconfig.json",
   "include": ["src/**/*.ts", "test/**/*.ts"]
 }
 ```
@@ -24,15 +24,21 @@ Add `tsconfig.prod.json`:
 
 ```json
 {
-  "extends": "@ethereumjs/config-typescript",
-  "compilerOptions": {
-    "outDir": "./dist"
-  },
+  "extends": "@ethereumjs/config-typescript/tsconfig.prod.json",
   "include": ["src/**/*.ts"]
 }
 ```
 
-Use CLI commands above in `package.json`:
+Add `tsconfig.browser.json`:
+
+```json
+{
+  "extends": "@ethereumjs/config-typescript/tsconfig.browser.json",
+  "include": ["src/**/*.ts"]
+}
+```
+
+Use CLI commands above in your `package.json`:
 
 ```json
   "scripts": {
@@ -41,5 +47,14 @@ Use CLI commands above in `package.json`:
   }
 ```
 
+The default production target is ES2017. To support shipping the ES5 target for browsers, add to your `package.json`:
 
-
+```json
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist.browser/index.js",
+  "files": [
+    "dist",
+    "dist.browser"
+  ]
+```
