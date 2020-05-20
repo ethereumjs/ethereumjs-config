@@ -4,8 +4,6 @@ Common `TypeScript` configuration for `EthereumJS` libraries.
 
 Tool: [TypeScript](https://www.typescriptlang.org/)
 
-Supported Version: `^3.2.2`
-
 Exposed CLI commands:
 
 - `ethereumjs-config-ts-compile`

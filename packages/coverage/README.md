@@ -4,8 +4,6 @@ Common test coverage configuration for `EthereumJS` libraries.
 
 Tool: [nyc](https://istanbul.js.org/)
 
-Supported Version: `^11.7.0`
-
 Exposed CLI command:
 
 - `ethereumjs-config-coverage`

@@ -4,8 +4,6 @@ Common formatting configuration for `EthereumJS` libraries.
 
 Tool: [Prettier](https://prettier.io/)
 
-Supported Version: `^1.15.3`
-
 Exposed CLI commands:
 
 - `ethereumjs-config-format`
@@ -16,7 +14,7 @@ Exposed CLI commands:
 Add `prettier.config.js`:
 
 ```javascript
-module.exports = require('@ethereumjs/config-format')
+module.exports = require('@ethereumjs/config-format');
 ```
 
 Add `.prettierignore`:
