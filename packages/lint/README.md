@@ -18,7 +18,7 @@ Add `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: "@ethereumjs/config-lint"
+  extends: "@ethereumjs/eslint-config-helper"
 }
 ```
 
@@ -30,3 +30,6 @@ Use CLI commands above in your `package.json`:
     "lint:fix": "ethereumjs-config-lint-fix",
   }
 ```
+
+
+_Note: The name of this package deviates from the standard @ethereumjs/config-xxx, due to an ESLint hard rule on package naming. [Reference](https://eslint.org/docs/developer-guide/shareable-configs#npm-scoped-modules)._
