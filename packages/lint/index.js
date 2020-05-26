@@ -1,25 +1,21 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'implicit-dependencies'],
+  plugins: ['@typescript-eslint', 'implicit-dependencies', 'prettier'],
   env: {
     es6: true,
     node: true,
   },
   ignorePatterns: ['node_modules/**/*', 'dist*/**/*'],
-  extends: [
-    'typestrict',
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['typestrict', 'eslint:recommended'],
   rules: {
     'no-console': 'warn',
     'no-debugger': 'error',
     'prefer-const': 'error',
     'no-var': 'error',
-    'implicit-dependencies/no-implicit': 'error',
+    'implicit-dependencies/no-implicit': [
+      'error',
+      { peer: true, dev: true, optional: true },
+    ],
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/interface-name-prefix': [
       'error',
@@ -27,6 +23,7 @@ module.exports = {
         prefixWithI: 'never',
       },
     ],
+    'prettier/prettier': 'error',
   },
   parserOptions: {
     sourceType: 'module',
