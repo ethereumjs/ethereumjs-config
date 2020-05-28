@@ -1,3 +1,4 @@
 #!/bin/sh
+set -e
 set -o xtrace
-exec tsc -p ./tsconfig.prod.json
+tsc -p ./tsconfig.prod.json && test -f ./tsconfig.browser.json && tsc -p ./tsconfig.browser.json
