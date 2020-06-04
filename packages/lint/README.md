@@ -1,4 +1,4 @@
-# @ethereumjs/config-eslint
+# @ethereumjs/eslint-config-helper
 
 Common linting configuration for `EthereumJS` libraries utilizing:
 
