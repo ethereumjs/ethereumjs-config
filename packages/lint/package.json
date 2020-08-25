@@ -1,0 +1,31 @@
+{
+  "name": "@ethereumjs/eslint-config-helper",
+  "version": "2.0.0",
+  "main": ".eslintrc.js",
+  "license": "MIT",
+  "repository": "git@github.com:ethereumjs/ethereumjs-config.git",
+  "author": "Krzysztof Kaczor <chris@kaczor.io>",
+  "files": [
+    "index.js",
+    "cli"
+  ],
+  "bin": {
+    "ethereumjs-config-lint": "./cli/lint.sh",
+    "ethereumjs-config-lint-fix": "./cli/lint-fix.sh"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-typestrict": "^1.0.0",
+    "eslint-plugin-implicit-dependencies": "^1.0.4",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.3"
+  }
+}
