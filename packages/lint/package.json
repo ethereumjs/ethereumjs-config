@@ -1,5 +1,5 @@
 {
-  "name": "@ethereumjs/eslint-config-helper",
+  "name": "@ethereumjs/eslint-config-defaults",
   "version": "2.0.0",
   "main": ".eslintrc.js",
   "license": "MIT",
