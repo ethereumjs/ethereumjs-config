@@ -1,4 +1,4 @@
-# @ethereumjs/eslint-config-helper
+# @ethereumjs/eslint-config-defaults
 
 Common linting configuration for `EthereumJS` libraries utilizing:
 
@@ -18,7 +18,7 @@ Add `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: "@ethereumjs/eslint-config-helper"
+  extends: "@ethereumjs/eslint-config-defaults"
 }
 ```
 
