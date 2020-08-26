@@ -8,16 +8,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## [2.0.0] - 2020-08-25
 
-This package got a major overhaul, with several updates to our tooling, including package renaming and retiring some scripts. Below is a breakdown by package.
+This project got a major overhaul, with several updates to the tooling, including packages renaming and retiring some scripts. Below is a breakdown by package.
 
 **@ethereumjs/config-nyc => [@ethereumjs/coverage](https://github.com/ethereumjs/ethereumjs-config/tree/master/packages/coverage)**
 
 - `@ethereumjs/config-nyc` got renamed to the library agnostic name `@ethereumjs/config-coverage`. 
 - The platform-specific script `ethereumjs-config-coveralls` got removed, due to the use of Codecov and [nicer integration to GitHub CI](https://github.com/codecov/codecov-action).
-
-**@ethereumjs/config-prettier**
-
-- This package was removed, due to the overlap in functionality introduced in `eslint-plugin-prettier`.
 
 **@ethereumjs/config-tslint => [@ethereumjs/eslint-config-defaults](https://github.com/ethereumjs/ethereumjs-config/tree/master/packages/lint)**
 
@@ -27,6 +23,10 @@ Following the deprecation of the [TSLint project](https://palantir.github.io/tsl
 - Added TypeScript ESLint
 - Added TypeStrict
 - Added Prettier
+
+**@ethereumjs/config-prettier**
+
+- This package was removed, due to the overlap in functionality introduced in `@ethereumjs/config-tslint`.
 
 **@ethereumjs/config-tsc => [@ethereumjs/config-typescript](https://github.com/ethereumjs/ethereumjs-config/tree/master/packages/typescript )**
 
