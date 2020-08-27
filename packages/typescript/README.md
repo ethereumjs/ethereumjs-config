@@ -11,6 +11,8 @@ Exposed CLI commands:
 
 ## Usage
 
+The three files below compose the functionality built into `./cli/ts-build.sh` and `./cli/ts-compile.sh`. Note that the browser build is optional, and in the case it's not present in your project, browser builds will be ignored.
+
 Add `tsconfig.json`:
 
 ```json
@@ -25,7 +27,10 @@ Add `tsconfig.prod.json`:
 ```json
 {
   "extends": "@ethereumjs/config-typescript/tsconfig.prod.json",
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "outDir": "./dist"
+  }
 }
 ```
 
@@ -34,9 +39,14 @@ Add `tsconfig.browser.json`:
 ```json
 {
   "extends": "@ethereumjs/config-typescript/tsconfig.browser.json",
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "outDir": "./dist.browser"
+  }
 }
 ```
+
+Note: the `outDir` property is mandatory to generate assets to a directory.
 
 Use CLI commands above in your `package.json`:
 
