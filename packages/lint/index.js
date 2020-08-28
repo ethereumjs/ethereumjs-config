@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  ignorePatterns: ['node_modules/**/*', 'dist*/**/*'],
+  ignorePatterns: ['node_modules/**/*', 'dist*/**/*', 'coverage/', 'prettier.config.js', 'typedoc.js'],
   extends: ['typestrict', 'eslint:recommended'],
   rules: {
     'no-console': 'warn',
@@ -27,5 +27,6 @@ module.exports = {
   },
   parserOptions: {
     sourceType: 'module',
+    project: './tsconfig.json'
   },
 };
