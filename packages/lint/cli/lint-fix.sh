@@ -56,4 +56,10 @@ blue "[Lint]${NOCOLOR} fixing..."
 
 eslint --fix --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx --resolve-plugins-relative-to $(package_path)
 
-blue "[Lint]${GREEN} DONE.\n"
+RETURN_CODE=$?
+
+if [ $RETURN_CODE -eq 0 ]; then
+    blue "[Lint]${GREEN} DONE.\n"
+else
+    exit $RETURN_CODE
+fi
