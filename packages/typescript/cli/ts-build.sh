@@ -40,7 +40,7 @@ printf "${BLUE}[Node build] Working... "
 tsc -p ./tsconfig.prod.json
 green "DONE"
 
-echo "\n\n";
+echo "\n";
 
 if [ -f ./tsconfig.browser.json ];
 then
@@ -52,9 +52,14 @@ then
     printf "Working... "
 
     tsc -p ./tsconfig.browser.json
-    green "DONE\n\n"
+    RETURN_CODE=$?
 
+    if [ $RETURN_CODE -eq 0 ]; then
+        green "DONE"
+    else
+        exit $RETURN_CODE
+    fi
 else
-    dim "Skipping browser build, because no tsconfig.browser.json file is present.\n"
+    dim "Skipping browser build, because no tsconfig.browser.json file is present."
 fi
 
