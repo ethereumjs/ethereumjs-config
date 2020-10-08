@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  ignorePatterns: ['node_modules/', 'dist/', 'dist.browser/', 'coverage/', 'prettier.config.js', 'typedoc.js', 'test-build/', ''],
+  ignorePatterns: ['node_modules/', 'dist/', 'dist.browser/', 'coverage/', 'prettier.config.js', 'typedoc.js', 'test-build/', 'karma.conf.js'],
   extends: ['typestrict', 'eslint:recommended'],
   rules: {
     'no-console': 'warn',
