@@ -50,7 +50,7 @@ dim() {
 
 dim "> eslint --fix --config ./.eslintrc.js . \\ "
 dim "\t --ext .js,.jsx,.ts,.tsx \\ "
-dim "\t --resolve-plugins-relative-to $(package_path)\n"
+dim "\t --resolve-plugins-relative-to $(package_path)"
 
 blue "[Lint]${NOCOLOR} fixing..."
 
@@ -59,7 +59,7 @@ eslint --fix --config ./.eslintrc.js . --ext .js,.jsx,.ts,.tsx --resolve-plugins
 RETURN_CODE=$?
 
 if [ $RETURN_CODE -eq 0 ]; then
-    blue "[Lint]${GREEN} DONE.\n"
+    blue "[Lint]${GREEN} DONE."
 else
     exit $RETURN_CODE
 fi
