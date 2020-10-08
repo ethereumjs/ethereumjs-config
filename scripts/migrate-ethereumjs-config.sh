@@ -6,10 +6,10 @@
 
 npm remove @ethereumjs/config-nyc @ethereumjs/config-tsc @ethereumjs/config-prettier @ethereumjs/config-tslint
 
-npm i --save-dev @ethereumjs/config-coverage \
-                 @ethereumjs/config-typescript \
-                 @ethereumjs/config-format \
-                 @ethereumjs/eslint-config-helper \
+npm i --save-dev @ethereumjs/config-coverage @ethereumjs/config-typescript @ethereumjs/eslint-config-defaults
+
+npm i --save-dev @typescript-eslint/eslint-plugin eslint-config-prettier eslint-plugin-implicit-dependencies
+
 
 # 2. Some scripts had changed name
 
@@ -18,6 +18,9 @@ sed -E -e 's/ethereumjs\-config\-tsc/ethereumjs-config-ts-compile/' -ibak packag
 
 # ethereumjs-config-build -> ethereumjs-config-ts-build
 sed -E -e 's/ethereumjs\-config\-build/ethereumjs-config-ts-build/' -ibak package.json
+
+
+npm i --save-dev eslint@6
 
 
 # 3. Some scripts are just gone
@@ -30,3 +33,12 @@ grep -EHn "ethereumjs-config-coveralls" package.json
 # ethereumjs-config-lint -> ☠️
 # ethereumjs-config-lint-fix -> ☠️
 grep -EHn "ethereumjs-config-tslint(-fix)?" package.json
+
+grep -EHn "tsc" tslint*.json
+
+
+# 4. Health check
+npm run build
+npm run lint
+npm run lint:fix
+npm run coverage
