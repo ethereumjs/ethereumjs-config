@@ -9,7 +9,8 @@
     "tsconfig.json",
     "tsconfig.prod.json",
     "tsconfig.browser.json",
-    "cli"
+    "cli",
+    "README.md"
   ],
   "bin": {
     "ethereumjs-config-ts-compile": "./cli/ts-compile.sh",
