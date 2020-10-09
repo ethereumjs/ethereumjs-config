@@ -4,10 +4,20 @@
 
 npm remove @ethereumjs/config-nyc @ethereumjs/config-tsc @ethereumjs/config-prettier @ethereumjs/config-tslint
 
-ETHEREUMJS_CONFIG_PATH=/Users/evertonfraga/Projects/Ethereum/ethereumjs-config
+ETHEREUMJS_CONFIG_PATH=/Users/evertonfraga/Projects/Ethereum/ethereumjs-config/packages
+
+PROJECT_PWD=`pwd`
+
+cd $ETHEREUMJS_CONFIG_PATH/coverage && npm link
+cd $ETHEREUMJS_CONFIG_PATH/typescript && npm link
+cd $ETHEREUMJS_CONFIG_PATH/lint && npm link
+
+cd $PROJECT_PWD
+npm link @ethereumjs/config-coverage
+npm link @ethereumjs/config-typescript
+npm link @ethereumjs/eslint-config-defaults
 
 npm i --save-dev \
   @ethereumjs/config-coverage@file:$ETHEREUMJS_CONFIG_PATH/packages/coverage \
   @ethereumjs/config-typescript@file:$ETHEREUMJS_CONFIG_PATH/packages/typescript \
-  @ethereumjs/config-format@file:$ETHEREUMJS_CONFIG_PATH/packages/format \
-  @ethereumjs/eslint-config-defaults@file:$ETHEREUMJS_CONFIG_PATH/packages/lint
+  @ethereumjs/eslint-config-helper@file:$ETHEREUMJS_CONFIG_PATH/packages/lint

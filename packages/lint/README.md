@@ -22,6 +22,12 @@ module.exports = {
 }
 ```
 
+Add `prettier.config.js`:
+
+```js
+module.exports = require('@ethereumjs/eslint-config-defaults/prettier.config.js')
+```
+
 Use CLI commands above in your `package.json`:
 
 ```json

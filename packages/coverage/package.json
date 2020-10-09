@@ -7,7 +7,8 @@
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
     "nyc.json",
-    "cli"
+    "cli",
+    "README.md"
   ],
   "bin": {
     "ethereumjs-config-coverage": "./cli/coverage.sh"

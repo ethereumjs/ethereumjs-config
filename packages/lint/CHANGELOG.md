@@ -12,9 +12,10 @@ This project got a major overhaul, with several updates to the tooling, includin
 
 **Breaking changes**
 
-- This package got renamed: `@ethereumjs/config-tslint` => [`@ethereumjs/eslint-config-defaults`](https://github.com/ethereumjs/ethereumjs-config/tree/master/packages/lint)
+- This package got renamed: `@ethereumjs/config-tslint` => [`@ethereumjs/eslint-config-defaults`](https://github.com/ethereumjs/ethereumjs-config/tree/master/packages/lint), PRs [#29](https://github.com/ethereumjs/ethereumjs-config/pull/29), [#32](https://github.com/ethereumjs/ethereumjs-config/pull/32)
+- Updated shell scripts and overall configuration, PR [#34](https://github.com/ethereumjs/ethereumjs-config/pull/34)
 
-Following the deprecation of the [TSLint project](https://palantir.github.io/tslint/) by Palantir, we moved on to ESLint, that have integrations with TypeScript and Prettier.
+Following the deprecation of the [TSLint project](https://palantir.github.io/tslint/) by Palantir, we moved on to ESLint, that allows us to better integrate with TypeScript and Prettier.
 - `@ethereumjs/config-tslint` got renamed to `@ethereumjs/eslint-config-defaults`
 - Removal of scripts `ethereumjs-config-tslint` and `ethereumjs-config-tslint-fix`
 - Added TypeScript ESLint

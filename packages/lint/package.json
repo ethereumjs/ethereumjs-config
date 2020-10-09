@@ -7,7 +7,9 @@
   "author": "Krzysztof Kaczor <chris@kaczor.io>",
   "files": [
     "index.js",
-    "cli"
+    "cli",
+    "prettier.config.js",
+    "README.md"
   ],
   "bin": {
     "ethereumjs-config-lint": "./cli/lint.sh",
