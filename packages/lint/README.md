@@ -37,7 +37,7 @@ Use CLI commands above in your `package.json`:
   }
 ```
 
-## Taking more of linting
+## Getting the most out of linting
 
 This lint package is used as git pre-push hook on [EthereumJS VM repo](https://github.com/ethereumjs/ethereumjs-vm/blob/567bd82e0f42d93f1a43d551da6067e305d8f3cd/package.json#L8-L12), with the help of [Husky](https://www.npmjs.com/package/husky).
 
