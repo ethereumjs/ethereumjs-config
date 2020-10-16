@@ -23,10 +23,10 @@
 
 package_path() {
     # canonical path of this script, resolving symlinks
-    REALPATH_SCRIPT=$(realpath $BASH_SOURCE)
+    SCRIPT_DIR=$(dirname $(readlink -f $0))
 
     # going up one directory, towards the lint package dir.
-    LINT_PACKAGE_DIRECTORY=$(dirname $(dirname ${REALPATH_SCRIPT}))
+    LINT_PACKAGE_DIRECTORY=$(dirname $(dirname ${SCRIPT_DIR}))
 
     echo $LINT_PACKAGE_DIRECTORY
 }
