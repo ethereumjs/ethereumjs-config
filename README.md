@@ -18,8 +18,5 @@ Bootstrapping:
 lerna bootstrap
 ```
 
-Publication with 2FA enabled:
+Publication is done manually with `npm publish` from the package directories.
 
-```sh
-NPM_CONFIG_OTP=123456 lerna publish
-```
