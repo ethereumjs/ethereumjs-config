@@ -16,6 +16,7 @@ module.exports = {
       'error',
       { peer: true, dev: true, optional: true },
     ],
+    '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/interface-name-prefix': [
       'error',
