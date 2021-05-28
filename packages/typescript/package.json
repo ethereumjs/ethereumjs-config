@@ -18,5 +18,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@tsconfig/node12": "^1.0.7"
   }
 }
